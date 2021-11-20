@@ -59,7 +59,7 @@ class Graph:
                 n1 = n
             elif n.element() == v:
                 n2 = n
-            elif n1 and n2:
+            if n1 and n2:
                 break
         if not (n1 and n2):
             raise NoeudException
